@@ -1,0 +1,34 @@
+# Your calendars. Each one becomes <file>.ics on your GitHub Pages site.
+#
+# Teams and competitions can be a name ("Arsenal"), a SofaScore id (42) or a
+# sofascore.com link. Add `sport` when a name exists in more than one sport
+# (Real Madrid plays football and basketball). Tennis players, MMA fighters
+# and other individual competitors go under `teams` too.
+
+# Time zone for the overview page. The calendar files themselves carry exact
+# times, and your calendar app shows them in your own time zone.
+timezone: Europe/London
+
+# Keep finished matches (with their final score) this many days back.
+past_days: 30
+
+# How often calendar apps should re-check the feed. Match this to the
+# schedule in .github/workflows/build.yml.
+refresh_hours: 6
+
+calendars:
+  - name: My teams
+    file: my-teams
+    alarm_minutes: 30        # reminder before kick-off; remove for none
+    teams:
+      - Arsenal
+      - team: Real Madrid
+        sport: basketball
+      - team: Jannik Sinner
+        sport: tennis
+
+  - name: Champions League
+    file: champions-league
+    tournaments:
+      - tournament: UEFA Champions League
+        sport: football

@@ -1,0 +1,207 @@
+{
+ "team": {
+  "id": 206570,
+  "name": "Jannik Sinner",
+  "shortName": "J. Sinner",
+  "nameCode": "SIN",
+  "slug": "sinner-jannik",
+  "url": "https://www.sofascore.com/tennis/team/sinner-jannik/206570",
+  "national": false,
+  "gender": "M",
+  "ranking": 2,
+  "country": "Italy",
+  "countryCode": "IT",
+  "fullName": "Jannik Sinner",
+  "sport": "tennis",
+  "category": {
+   "id": 3,
+   "name": "ATP",
+   "slug": "atp"
+  },
+  "primaryTournament": {
+   "id": 2480,
+   "name": "Roland Garros, Men",
+   "slug": "roland-garros",
+   "url": "https://www.sofascore.com/tennis/tournament/atp/roland-garros/2480",
+   "sport": "tennis",
+   "category": {
+    "id": 3,
+    "name": "ATP",
+    "slug": "atp"
+   }
+  },
+  "followers": 228934,
+  "type": 1
+ },
+ "last_matches": [
+  {
+   "id": 16385361,
+   "customId": "nTxsvGHb",
+   "slug": "jannik-sinner-alexander-zverev",
+   "url": "https://www.sofascore.com/tennis/match/jannik-sinner-alexander-zverev/nTxsvGHb#id:16385361",
+   "sport": "tennis",
+   "tournament": {
+    "id": 2361,
+    "name": "Wimbledon, Men",
+    "slug": "wimbledon",
+    "url": "https://www.sofascore.com/tennis/tournament/atp/wimbledon/2361",
+    "sport": "tennis",
+    "category": {
+     "id": 3,
+     "name": "ATP",
+     "slug": "atp"
+    },
+    "stage": "Wimbledon, London, Great Britain"
+   },
+   "season": {
+    "id": 85943,
+    "name": "Wimbledon Men Singles 2026",
+    "year": "2026"
+   },
+   "round": 29,
+   "roundName": "Final",
+   "status": {
+    "code": 100,
+    "type": "finished",
+    "description": "Ended"
+   },
+   "startTime": "2026-07-12T15:05:00Z",
+   "startTimestamp": 1783868700,
+   "homeTeam": {
+    "id": 206570,
+    "name": "Jannik Sinner",
+    "shortName": "J. Sinner",
+    "nameCode": "SIN",
+    "slug": "sinner-jannik",
+    "url": "https://www.sofascore.com/tennis/team/sinner-jannik/206570",
+    "national": false,
+    "gender": "M",
+    "ranking": 2,
+    "country": "Italy",
+    "countryCode": "IT"
+   },
+   "awayTeam": {
+    "id": 57163,
+    "name": "Alexander Zverev",
+    "shortName": "A. Zverev",
+    "nameCode": "ZVE",
+    "slug": "zverev-alexander",
+    "url": "https://www.sofascore.com/tennis/team/zverev-alexander/57163",
+    "national": false,
+    "gender": "M",
+    "ranking": 1,
+    "country": "Germany",
+    "countryCode": "DE"
+   },
+   "homeScore": {
+    "current": 3,
+    "period1": 6,
+    "period2": 7,
+    "period3": 6,
+    "period4": 6,
+    "period1TieBreak": 7,
+    "period2TieBreak": 7,
+    "point": "0",
+    "normaltime": 3
+   },
+   "awayScore": {
+    "current": 1,
+    "period1": 7,
+    "period2": 6,
+    "period3": 3,
+    "period4": 4,
+    "period1TieBreak": 9,
+    "period2TieBreak": 2,
+    "point": "0",
+    "normaltime": 1
+   },
+   "winner": "home",
+   "homeSeed": "1",
+   "awaySeed": "2",
+   "firstToServe": "away",
+   "groundType": "Grass"
+  },
+  {
+   "id": 16385331,
+   "customId": "HXfsvGHb",
+   "slug": "jannik-sinner-novak-djokovic",
+   "url": "https://www.sofascore.com/tennis/match/jannik-sinner-novak-djokovic/HXfsvGHb#id:16385331",
+   "sport": "tennis",
+   "tournament": {
+    "id": 2361,
+    "name": "Wimbledon, Men",
+    "slug": "wimbledon",
+    "url": "https://www.sofascore.com/tennis/tournament/atp/wimbledon/2361",
+    "sport": "tennis",
+    "category": {
+     "id": 3,
+     "name": "ATP",
+     "slug": "atp"
+    },
+    "stage": "Wimbledon, London, Great Britain"
+   },
+   "season": {
+    "id": 85943,
+    "name": "Wimbledon Men Singles 2026",
+    "year": "2026"
+   },
+   "round": 28,
+   "roundName": "Semifinals",
+   "status": {
+    "code": 100,
+    "type": "finished",
+    "description": "Ended"
+   },
+   "startTime": "2026-07-10T15:20:00Z",
+   "startTimestamp": 1783696800,
+   "homeTeam": {
+    "id": 206570,
+    "name": "Jannik Sinner",
+    "shortName": "J. Sinner",
+    "nameCode": "SIN",
+    "slug": "sinner-jannik",
+    "url": "https://www.sofascore.com/tennis/team/sinner-jannik/206570",
+    "national": false,
+    "gender": "M",
+    "ranking": 2,
+    "country": "Italy",
+    "countryCode": "IT"
+   },
+   "awayTeam": {
+    "id": 14882,
+    "name": "Novak Djokovic",
+    "shortName": "N. Djokovic",
+    "nameCode": "DJO",
+    "slug": "djokovic-novak",
+    "url": "https://www.sofascore.com/tennis/team/djokovic-novak/14882",
+    "national": false,
+    "gender": "M",
+    "ranking": 11,
+    "country": "Serbia",
+    "countryCode": "RS"
+   },
+   "homeScore": {
+    "current": 3,
+    "period1": 6,
+    "period2": 6,
+    "period3": 6,
+    "point": "40",
+    "normaltime": 3
+   },
+   "awayScore": {
+    "current": 0,
+    "period1": 4,
+    "period2": 4,
+    "period3": 4,
+    "point": "0",
+    "normaltime": 0
+   },
+   "winner": "home",
+   "homeSeed": "1",
+   "awaySeed": "7",
+   "firstToServe": "home",
+   "groundType": "Grass"
+  }
+ ],
+ "next_matches": []
+}
