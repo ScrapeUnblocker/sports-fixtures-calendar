@@ -194,6 +194,12 @@ Match data from SofaScore via <a href="{SITE}">ScrapeUnblocker</a>'s <a href="{D
 """
 
 
+def write_ics(path: Path, text: str) -> None:
+    # newline="" keeps the CRLF line ends RFC 5545 asks for on every platform.
+    with open(path, "w", encoding="utf-8", newline="") as fh:
+        fh.write(text)
+
+
 def build(config_path: Path, out_dir: Path, *, client: Optional[SofaScore] = None,
           now: Optional[datetime] = None, log=print) -> List[Calendar]:
     cfg = load_config(config_path)
@@ -208,11 +214,12 @@ def build(config_path: Path, out_dir: Path, *, client: Optional[SofaScore] = Non
         if not any(not r.get("error") for r in cal.resolved):
             raise SystemExit(f"Calendar '{cal.name}': none of its teams or tournaments "
                              "were found - check calendars.yml.")
-        (out_dir / f"{cal.file}.ics").write_text(
-            ics.calendar(cal.name, cal.matches, domain=domain, timezone_name=cfg["timezone"],
-                         alarm_minutes=cal.alarm_minutes, refresh_hours=cfg["refresh_hours"],
-                         emoji=cfg["emoji"], now=now),
-            encoding="utf-8", newline="")
+        write_ics(out_dir / f"{cal.file}.ics",
+                  ics.calendar(cal.name, cal.matches, domain=domain,
+                               timezone_name=cfg["timezone"],
+                               alarm_minutes=cal.alarm_minutes,
+                               refresh_hours=cfg["refresh_hours"], emoji=cfg["emoji"],
+                               now=now))
         log(f"  -> {cal.file}.ics ({len(cal.matches)} matches)")
     (out_dir / "index.html").write_text(
         index_html(cfg["calendars"], base=base, tz_name=cfg["timezone"], now=now),
@@ -238,9 +245,8 @@ def quick(teams: List[str], tournaments: List[str], out: Path, *, name: str,
     client = client or SofaScore()
     now = datetime.now(timezone.utc)
     collect(client, cal, past_days=30, now=now, log=log)
-    out.write_text(ics.calendar(cal.name, cal.matches, domain="sports-fixtures-calendar",
-                                alarm_minutes=alarm_minutes, now=now),
-                   encoding="utf-8", newline="")
+    write_ics(out, ics.calendar(cal.name, cal.matches, domain="sports-fixtures-calendar",
+                                alarm_minutes=alarm_minutes, now=now))
     log(f"Wrote {out} ({len(cal.matches)} matches, {client.calls} API call(s)).")
     return cal
 
